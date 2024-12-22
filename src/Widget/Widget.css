@@ -38,19 +38,8 @@
 }
 
 .widget-content {
-  /* Additional widget-specific styles */
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-}
-
-#react-widget {
-  position: fixed; /* Fixes the widget to the viewport */
-  bottom: 20px; /* Adjust to place it at the bottom-right corner */
-  right: 20px;
-  z-index: 9999; /* Ensures it appears above other elements */
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .widget-content h2 {
