@@ -9,7 +9,6 @@ const Widget = () => {
   };
 
   return (
-    // <div id="react-widget">
     <div className="widget-container">
       {!isOpen ? (
         <button className="widget-button" onClick={toggleWidget}>
@@ -27,7 +26,6 @@ const Widget = () => {
         </div>
       )}
     </div>
-    // </div>
   );
 };
 

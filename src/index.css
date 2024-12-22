@@ -28,10 +28,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  position: fixed; /* Fixes the widget to the viewport */
-  bottom: 20px; /* Adjust to place it at the bottom-right corner */
-  right: 20px;
-  z-index: 9999;
 }
 
 h1 {
