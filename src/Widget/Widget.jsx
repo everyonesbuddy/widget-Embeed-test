@@ -55,8 +55,8 @@ const Widget = () => {
     backgroundColor: "#007bff",
     color: "white",
     border: "none",
-    borderRadius: "50%",
-    width: "50px",
+    borderRadius: "30px",
+    width: "80px",
     height: "50px",
     fontSize: "16px",
     cursor: "pointer",
@@ -72,6 +72,7 @@ const Widget = () => {
     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)",
     borderRadius: "8px",
     overflow: "hidden",
+    color: "#000000",
   };
 
   const closeButtonStyle = {
@@ -81,6 +82,7 @@ const Widget = () => {
     fontWeight: "bold",
     cursor: "pointer",
     padding: "10px",
+    color: "#000000",
   };
 
   const contentStyle = {
