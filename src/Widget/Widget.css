@@ -3,8 +3,6 @@
   bottom: 20px; /* Bottom-right corner */
   right: 20px;
   z-index: 2147483647; /* Max z-index for most browsers */
-  border: 2px solid red; /* For visibility */
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent */
 }
 
 .widget-button {

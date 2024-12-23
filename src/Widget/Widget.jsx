@@ -11,11 +11,10 @@ const Widget = () => {
 
   const widgetContent = (
     <div className="widget-container">
-      {!isOpen ? (
-        <button className="widget-button" onClick={toggleWidget}>
-          Open Widget
-        </button>
-      ) : (
+      <button className="widget-button" onClick={toggleWidget}>
+        {isOpen ? "Close" : "Open"}
+      </button>
+      {isOpen && (
         <div className="widget-modal">
           <button className="widget-close" onClick={toggleWidget}>
             &times;
@@ -29,7 +28,6 @@ const Widget = () => {
     </div>
   );
 
-  // Use ReactDOM.createPortal to render the widget at the <body> level
   return ReactDOM.createPortal(widgetContent, document.body);
 };
 
