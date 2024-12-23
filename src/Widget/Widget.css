@@ -1,51 +1,53 @@
 .widget-container {
-  position: fixed; /* Fix the widget to the viewport */
-  bottom: 20px; /* Place it 20px from the bottom */
-  right: 20px; /* Place it 20px from the right */
-  z-index: 9999; /* High enough to appear above most elements */
+  position: fixed; /* Stick to viewport */
+  bottom: 20px; /* Bottom-right corner */
+  right: 20px;
+  z-index: 2147483647; /* Max z-index for most browsers */
+  border: 2px solid red; /* For visibility */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent */
 }
 
 .widget-button {
-  background-color: #007bff; /* Blue color for the button */
-  color: white; /* White text */
+  background-color: #007bff;
+  color: white;
   border: none;
-  border-radius: 50%; /* Make it a circle */
-  width: 50px; /* Button size */
+  border-radius: 50%;
+  width: 50px;
   height: 50px;
-  font-size: 16px; /* Text size */
-  cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .widget-modal {
   position: fixed;
-  bottom: 80px; /* Position above the button */
-  right: 20px; /* Align to the right */
-  width: 300px; /* Fixed width for the modal */
-  background: white; /* White background for the modal */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Modal shadow */
-  border-radius: 8px; /* Rounded corners */
-  overflow: hidden; /* Hide overflowing content */
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .widget-close {
-  background: none; /* Transparent background */
-  border: none; /* Remove border */
-  font-size: 20px; /* Larger size for clarity */
-  font-weight: bold; /* Bold text */
-  cursor: pointer; /* Pointer cursor on hover */
-  padding: 10px; /* Add padding for click area */
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .widget-content {
-  padding: 20px; /* Spacing inside the modal */
-  font-family: Arial, sans-serif; /* Standard font */
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .widget-content h2 {
-  margin: 0 0 10px; /* Margin below the header */
+  margin: 0 0 10px;
 }
 
 .widget-content p {
-  margin: 0; /* No margin for the paragraph */
+  margin: 0;
 }

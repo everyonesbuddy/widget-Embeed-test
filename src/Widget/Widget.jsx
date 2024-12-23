@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ReactDOM from "react-dom";
 import "./Widget.css";
 
 const Widget = () => {
@@ -8,7 +9,7 @@ const Widget = () => {
     setIsOpen(!isOpen);
   };
 
-  return (
+  const widgetContent = (
     <div className="widget-container">
       {!isOpen ? (
         <button className="widget-button" onClick={toggleWidget}>
@@ -27,6 +28,9 @@ const Widget = () => {
       )}
     </div>
   );
+
+  // Use ReactDOM.createPortal to render the widget at the <body> level
+  return ReactDOM.createPortal(widgetContent, document.body);
 };
 
 export default Widget;
